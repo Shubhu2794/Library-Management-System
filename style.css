@@ -1,0 +1,1505 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    transition: background-color 0.5s ease;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* -------------------------------------------------- Main Code ------------------------------------------*/
+
+.wrapper{
+    height: 741px;
+    width: 1475px;
+    /* background-color: red; */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+
+}
+
+header{
+    height: 105px;
+    width: 1475px;
+    background-color: #e6dcdb;
+}
+
+section{
+    height: 556px;
+    width:1475px;
+    background-color: grey;
+}
+
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #2d2629;
+}
+
+.foot {
+    color: white;
+    padding: 12px 8px 5px;
+}
+
+.logo {
+    float: left;
+    padding-left: 12px;
+}
+
+.logo img {
+    height: 78px;
+    width: 159px;
+    padding-left: 65px;
+}
+
+.logo h1 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+li a{
+    color: rgb(121, 67, 2);
+    text-decoration: none;
+
+}
+
+nav{
+    float: right;
+    word-spacing: 30px;
+    padding: 20px;
+    
+}
+
+nav li {
+    display: inline;
+    line-height: 90px;
+    padding-left: 49px;
+    font-weight: 800;
+    FONT-SIZE: larger;
+}
+
+section .sec_image{
+    margin-top: 0px;
+    background-image: url("main-background-image.png");
+    width: 100%;
+    height: 556px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+    opacity: .85;
+    
+}
+
+/* section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.102); Adjust the color and transparency as needed 
+    backdrop-filter: blur(3px);  Adjust the blur value as needed 
+}  */
+
+
+
+.box {
+    height: 205px;
+    width: 267px;
+    background-color: #000000b5;
+    color: rgb(240, 204, 204);
+    margin: 50px auto;
+    border-color: #dc3545;
+    padding: 17px 11.5px 12px 8px;
+    border: 12px;
+    border-radius: 10% 10% 10% 10%;
+    font-size: 25px;
+    opacity: 10;
+    TEXT-ALIGN: CENTER;
+}
+
+.box h1{
+    font-size: 1em;
+}
+
+
+/* ----------------------------- Login ------------------------------------------------------ */
+
+section .login-image{
+    margin-top: 0px;
+    background-image: url("loginpage.jpg");
+    width: 100%;
+    height: 556px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+    opacity: .85;
+    
+}
+.login-page {
+    width: 100%;
+    background-size: cover;
+    min-height: 1vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.login-box {
+  position: relative;
+  width: 590px;
+  height: 460px;
+  backdrop-filter: blur(25px);
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 4.5em 3em 4em 2.5em;
+  color: #e1d5d5;
+}
+  
+.login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d8f89;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+  
+.login-header span {
+    font-size: 30px;
+    color: #eddede;
+    font-weight: 600;
+}
+  
+.login-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: #578fff;
+    border-top-right-radius: 50%;
+    background: transparent;
+}
+  
+.login-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: #578fff;
+    border-top-left-radius: 50%;
+    background: transparent;
+  }
+  
+input-field:focus~.label,
+.input-field:valid~.label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    border-radius: 40%;
+    color: black;
+    padding: 0 10px;
+}
+  
+.i {
+    color: black;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+}
+  
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.remember-forget-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin: -4px;
+}
+  
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+  
+.input-field {
+    width: 100%;
+    height: 65px;
+    font-size: 16px;
+    background: transparent;
+    color: #cbb9b9;
+    padding-inline: 20px 15px;
+    border: 2px solid #fafafa;
+    padding: 10px 40px 10px 10px;
+    border-radius: 20px;
+    outline: none;
+    transition: all .3s ease;
+    position: relative;
+}
+  
+  
+  
+#user {
+  margin-bottom: 10px;
+}
+  
+.input-field::placeholder {
+    border: 30px;
+}
+  
+  input-field:focus+.label,
+  .input-field:valid+.label {
+    position: absolute;
+    top: -12px;
+    left: 35px;
+    font-size: 14px;
+    color: #000;
+    padding: 0 10px;
+    border: 2px solid #0c3816;
+    background: beige;
+  }
+  
+  .label {
+    position: absolute;
+    margin-bottom: 10px;
+    top: -25px;
+    left: 10px;
+    font-size: 16px;
+    color: #f8eded;
+    background-color: solid #76605b;
+    padding: 1px 2px 1px 2px;
+    border-radius: 1px;
+    transition: 0.2s ease;
+  }
+
+  input-field-signup:focus+.label-signup,
+  .input-field-signup:valid+.label-signup {
+    position: absolute;
+    top: -14px;
+    left: 35px;
+    font-size: 13px;
+    color: #000;
+    padding: 0px 6px;
+    border: 2px solid #0c3816;
+    background: beige;
+    border-radius: 20px;
+    font-weight: 700;
+  }
+
+  .label-signup{
+    position: absolute;
+    margin-bottom: 4px;
+    top: -25px;
+    left: 10px;
+    font-size: 14px;
+    color: #f8eded;
+    background-color: solid #76605b;
+    padding: 5px 2px 1px 2px;
+    border-radius: 1px;
+    transition: 0.2s ease;
+  }
+  .input-submit {
+    width: 108%;
+    height: 53px;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    margin-bottom: 13px;
+  }
+  .input-submit-signup {
+    width: 108%;
+    height: 53px;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+  
+  .input-submit:hover {
+    background: #088178;
+    color: #f4f1f4;
+  }
+  
+  .register {
+    text-align: center;
+    padding: 2px 10px 5px 69px;
+    color: #cccccc;
+}
+  
+  .register a {
+    font-weight: 500;
+  }
+  
+  .register span {
+    color: #f4ebeb;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .login-page {
+      padding: 20px;
+    }
+  
+    .login-box {
+      padding: 7.5em 2.5em 4em 1.5em;
+      ;
+    }
+  }
+  
+  .login-page a {
+    text-decoration: underline;
+    color: #f01010;
+    font-weight: 500;
+  }
+
+  .login-page a:hover{
+    color: #7cbeea;
+  }
+
+/* ------------------------------------------Sign-up---------------------------------------------- */
+
+.signup-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #088178;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .signup-form button:hover {
+    background-color: #06675e;
+  }
+  
+  .form {
+    font-family: Raleway, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .input-field-signup{
+    width: 108%;
+    height: 38px;
+    font-size: 18px;
+    background: transparent;
+    color: #f1e9e9;
+    padding-inline: 20px 15px;
+    border: 2px solid #fafafa;
+    padding: 4px 19px 6px 16px;
+    border-radius: 20px;
+    outline: none;
+    transition: all .3s ease;
+    position: relative;
+  }
+
+  .input-box-signup{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 23px 0;
+    font-size: larger;
+  }
+
+  .input-field-signup::placeholder {
+    border: 30px;
+}
+  
+  input-field-signup:focus+.label,
+  .input-field-signup:valid+.label {
+    position: absolute;
+    top: -15px;
+    left: 29px;
+    font-size: 12px;
+    border-radius: 14px;
+    color: #000;
+    padding: 0 10px;
+    border: 2px solid #0b3a11;
+    background: beige;
+  }
+
+  .signup-box {
+    position: relative;
+    width: 590px;
+    height: 537px;
+    backdrop-filter: blur(25px);
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 4em 4em 1em 1.5em;
+    color: #e1d5d5;
+    margin-top: -30px;
+}
+
+
+
+.errortext {
+  margin: -9px auto;
+  text-align: center;
+  color: #3e1010;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #dc3545;
+  border-color: white;
+  border-radius: 28px;
+  margin-top: 3.5px;
+  width: 447px;
+  padding: 7px;
+}
+
+
+
+/*------------------- dropdown -------------------------*/
+
+.dropdown-menu.show {
+  display: flex;
+  flex-wrap: wrap;
+  border: 10px;
+  border-radius: 9px 9px 28px 28px;
+  border-color: black;
+  text-align: justify;
+  background-color: #e1d6d7;
+  padding: 0px;
+  height: fit-content;
+  width: 4px;
+  text-decoration: dashed;
+}
+
+/* admin-dashboard.css */
+
+.admin body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #EAFFDA;
+  overflow-x: hidden;
+  box-sizing: border-box; /* Add this line */
+}
+.admin html, body {
+  height: 100%;
+}
+
+.admin .wrapper {
+  max-width: 100%;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.admin-dashboard-active {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.admin header {
+  background-color: #363020;
+  color: #ECFFDD;
+  padding: 0.5vh 0; /* 2% of the viewport height */
+  text-align: center;
+}
+
+.admin header .logo {
+  float: left;
+  padding-left: 12px;
+}
+
+.admin header .logo img {
+  height: 78px;
+  width: 159px;
+  padding-left: 65px;
+}
+.admin .logo h1 {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 14px 3px 44px;
+  color: #E2F1CD;
+}
+
+.admin nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.admin nav ul li a {
+  text-decoration: none;
+  color: #ECFFDD;
+  font-weight: bold;
+  font-size: 16px;
+}
+.admin nav ul li a i.bx {
+  margin-right: 5px; /* Adjust this value to bring the icon closer to the text */
+}
+
+
+.admin section {
+  flex: 7; /* 70% of the viewport height */
+  padding: 3vh 30px; /* 3% of the viewport height and 30px padding */
+  background-color: #f5feef;
+}
+
+.admin h1 {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.manage-button {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manage-button img {
+  height: 150px;
+  width: 150px;
+  margin-top: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.manage-button p {
+  padding: 10px 30px 40px 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.manage-button:hover img {
+  transform: scale(1.1);
+}
+
+.admin footer {
+  background-color: #363020;
+  color: #EEFFE0;
+  text-align: center;
+  width: 100%;
+  padding: 1vh 0; /* 1% of the viewport height */
+  margin-top: auto; /* Add this line to push the footer to the bottom */
+  box-sizing: border-box; /* Add this line */
+}
+
+
+/*_____________________________Student-dashboard_____________________________________*/
+
+/* Add your CSS styles here */
+.stuDash body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #EAFFDA;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+}
+.stuDash .wrapper {
+  max-width: 100%;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.stuDash header {
+  background-color: #1B4965;
+    color: #C4E5FD;
+    padding: 0.5vh 0;
+    text-align: center;
+    width: 1458px;
+}
+
+.stuDash header .logo {
+  float: left;
+  padding-left: 12px;
+}
+.stuDash .logo img {
+  height: 78px;
+  width: 117px;
+  padding-left: 29px;
+}
+.stuDash .logo h1 {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 14px 3px 44px;
+  color: #C4E5FD;
+  font-size: 25px;
+}
+.stuDash nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stuDash nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.stuDash nav ul li a {
+  text-decoration: none;
+  color: #C4E5FD;
+  font-weight: 700;
+  font-size: 19px;
+}
+.stuDash nav ul li a i.bx {
+  margin-right: 5px; /* Adjust this value to bring the icon closer to the text */
+}
+
+.stuDash section {
+  flex: 7;
+    padding: 3vh 30px;
+    background-color: #CAE9FF;
+    width: 1398px;
+}
+.stuDash h1 {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.stuDash .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stuDash footer {
+  background-color: #1B4965;
+  color: #C4E5FD;
+  text-align: center;
+  padding: 20px;
+  width: 1418px;
+}
+
+/*----------------------------Profile--------------------------------------*/
+
+.profile{
+  text-align: center;
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+  background-color: #95C9E9;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 42px 26px 20px 512px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.content-box {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 5px 10px; /* Example padding */
+  border: 1px solid #dd8a8a; /* Example border */
+  border-radius: 5px; /* Example border radius */
+  display: inline-block; /* Ensure the box does not span full width */
+}
+
+
+.profile p{
+  border: #06675e;
+  margin-top: 10px;
+}
+
+.profile a{
+  margin-top: 10px;
+}
+
+/* Add your CSS styles here */
+/* Style for the container */
+.edit-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form */
+.edit-container form {
+  margin-bottom: 20px;
+}
+
+/* Style for labels */
+.edit-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for input fields */
+.edit-container input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style for button */
+.edit-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for hidden fields */
+.edit-container .hidden {
+  display: none;
+}
+
+.edit-submit {
+  width: 99%;
+  height: 53px;
+  background: #d4ebf9;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 3px;
+  margin-bottom: -8px;
+
+}
+
+.edit-submit:hover {
+  background: #38acef;
+  color: #f4f1f4;
+}
+
+
+/* --------------------- admin Dashboard buttons --------------------------------- */
+.student-list-block {
+  border: 1px solid #0d2163;
+  border-radius: 14px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #61b3fa75; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.student-list-block h2 {
+  margin: 2px 2px 9px 4px;
+  padding: 4px 18px 2px 24px;
+  border: 2px solid #0a1125;
+  border-radius: 14px;
+  font-size: 18px;
+  color: #fff;
+  background: #000000a1;
+  text-align: center;
+}
+
+.student-list-block table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 3px;
+  border: 2px red;
+  display: inline-table;
+}
+
+.student-list-block tbody {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 9px;
+  border: 18px red;
+}
+
+.student-list-block th, .student-list-block td {
+  border: 1px solid #121e6c;
+  padding: 8px;
+  text-align: left;
+  background-color: #c3ecfffc;
+}
+
+.student-list-block th {
+  background-color: #27112a;
+  font-weight: bold;
+  color: #fae6c5;
+}
+/* ----------------------------------- Book display----------------------- */
+
+.book-list-block {
+  border: 1px solid #0d2163;
+  border-radius: 14px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #61b3fa75; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.book-list-block h2 {
+  margin: 2px 2px 9px 4px;
+  padding: 4px 18px 2px 24px;
+  border: 2px solid #0a1125;
+  border-radius: 14px;
+  font-size: 18px;
+  color: #fff;
+  background: #000000a1;
+  text-align: center;
+}
+
+.book-list-block table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 3px;
+  border: 2px red;
+  display: inline-table;
+}
+
+.book-list-block tbody {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 9px;
+  border: 18px red;
+}
+
+.book-list-block th, .book-list-block td {
+  border: 1px solid #121e6c;
+  padding: 8px;
+  text-align: left;
+  background-color: #c3ecfffc;
+}
+
+.book-list-block th {
+  background-color: #27112a;
+  font-weight: bold;
+  color: #fae6c5;
+}
+
+/* ---------------------------------Books------------------------------------- */
+
+.book body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #EAFFDA;
+  overflow-x: hidden;
+  box-sizing: border-box; /* Add this line */
+}
+.book html, body {
+  height: 100%;
+}
+
+.book .wrapper {
+  max-width: 100%;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.book-dashboard-active {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.book header {
+  background-color: #363020;
+  color: #ECFFDD;
+  padding: 0.5vh 0; /* 2% of the viewport height */
+  text-align: center;
+}
+
+.book header .logo {
+  float: left;
+  padding-left: 12px;
+}
+
+.book header .logo img {
+  height: 78px;
+  width: 159px;
+  padding-left: 65px;
+  margin-bottom: -4px;
+}
+.book .logo h1 {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 14px 3px 44px;
+  color: #E2F1CD;
+}
+
+.book nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.book nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.book nav ul li a {
+  text-decoration: none;
+  color: #ECFFDD;
+  font-weight: bold;
+  font-size: 16px;
+}
+.book nav ul li a i.bx {
+  margin-right: 5px; /* Adjust this value to bring the icon closer to the text */
+}
+
+
+.book section {
+  flex: 7; /* 70% of the viewport height */
+  padding: 3vh 30px; /* 3% of the viewport height and 30px padding */
+  background-color: #f5feef;
+  background-image: url(addbooks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(50px);
+  opacity: .85;
+}
+
+.book h1 {
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.book footer {
+  background-color: #363020;
+  color: #EEFFE0;
+  text-align: center;
+  width: 1475px;
+  padding: 1vh 0;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+
+.books {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-start;
+}
+
+.books a {
+  display: inline-block;
+  padding: 50px 24px;
+  margin: 0;
+  background-color: #61b3fa75;
+  border: 1px solid #0d2163;
+  border-radius: 14px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: blink;
+  transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.books a:hover {
+  background-color: #042d6f;
+  color: rgb(247, 243, 236);
+}
+
+
+/* ------------------------------------------ Add book ---------------------------------------------- */
+
+.book-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.book-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.book-page {
+  width: 100%;
+  background-size: cover;
+  min-height: 1vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #088178;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-form button:hover {
+  background-color: #06675e;
+}
+
+.book form {
+  font-family: Raleway, sans-serif;
+  margin: 0px;
+}
+
+.input-field-book{
+  width: 108%;
+  height: 48px;
+  font-size: 18px;
+  background: #f9fff94f;
+  color: #000000;
+  padding-inline: 20px 15px;
+  border: 2px solid #6a766a;
+  padding: 4px 19px 6px 16px;
+  border-radius: 20px;
+  outline: none;
+  transition: all .3s ease;
+  position: relative;
+  margin-bottom: 4px;
+  font-family: sans-serif;
+}
+
+.label-book{
+  position: absolute;
+    margin-bottom: 31px;
+    top: -27px;
+    left: 10px;
+    font-size: 15px;
+    color: #251818;
+    font-weight: 600;
+    background-color: solid #76605b;
+    padding: 5px 4px 3px 2px;
+    border-radius: 1px;
+    transition: 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.input-box-book{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 23px 0;
+  font-size: larger;
+}
+
+.input-field-book::placeholder {
+  border: 30px;
+}
+
+input-field-book:focus+.label-book,
+.input-field-book:valid+.label-book {
+  position: absolute;
+  top: -14px;
+  left: 44px;
+  font-size: 13px;
+  border-radius: 14px;
+  color: #000101;
+  padding: 0 10px;
+  border: 2px solid #195221d6;
+  background: #ffffc8;
+
+}
+.select-field-book {
+  width: 108%;
+  height: auto; /* Set height to auto */
+  max-height: 160px; /* Set maximum height */
+  overflow-y: auto; /* Add scrollbar when needed */
+  padding-right: 20px; /* Add space for scrollbar */
+  appearance: none; /* Remove default arrow */
+  background-color: #f9fff94f; /* Adjust background color */
+  color: #000000;
+  border: 2px solid #6a766a;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  size: 5;
+  scrollbar-width: 50px;
+}
+.book-option {
+  background-color: #ebe97d69;
+  color: #082d11;
+  border: 1px solid black;
+  border-radius: 34px;
+  transition: 0.2s;
+  font-weight: 500;
+}
+.book-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Adjust width as needed */
+  max-height: 160px; /* Set maximum height */
+  overflow-y: auto; /* Add scrollbar when needed */
+}
+
+
+.book-option:focus {
+  outline: none; /* Remove the default outline */
+}
+.book-option:hover {
+  background-color: #06675e; /* Background color of options on hover */
+  color: #fff; /* Text color of options on hover */
+}
+
+.book-option::after {
+  content: ""; /* Required to display the pseudo-element */
+  position: absolute; /* Position the pseudo-element relative to the parent */
+  top: 0; /* Position at the top of the option */
+  right: 0; /* Position at the right of the option */
+  bottom: 0; /* Position at the bottom of the option */
+  left: 0; /* Position at the left of the option */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background color */
+  transition: background-color 0.2s; /* Transition duration for hover effect */
+}
+
+.book-option:hover::after {
+  background-color: rgba(0, 0, 0, 0.3); /* Background color of pseudo-element on hover */
+}
+
+
+.select-field-book:focus + .label-book,
+.select-field-book:valid + .label-book {
+  position: absolute;
+  top: -14px;
+  left: 44px;
+  font-size: 13px;
+  border-radius: 14px;
+  color: #000101;
+  padding: 0 10px;
+  border: 2px solid #195221d6;
+  background: #ffffc8;
+}
+
+.book-box {
+  position: relative;
+  width: 590px;
+  height: 537px;
+  backdrop-filter: blur(25px);
+  border: 4px solid #5f5656;
+  border-radius: 20px;
+  padding: 4em 4em 1em 1.5em;
+  color: #e1d5d5;
+  margin-top: -19px;
+}
+
+  
+.book-header {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #95875a;
+  width: 180px;
+  height: 70px;
+  border-radius: 0 0 20px 20px;
+}
+
+.book-header span {
+  font-size: 30px;
+  color: #e0ffd9;
+  font-weight: 600;
+}
+
+.book-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  background-color: #578fff;
+  border-top-right-radius: 50%;
+  background: transparent;
+}
+
+.book-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  background-color: #578fff;
+  border-top-left-radius: 50%;
+  background: transparent;
+}
+
+.input-submit-book {
+  width: 108%;
+  height: 53px;
+  background: #ddfbef;
+  font-size: 23px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: -38px;
+  margin-bottom: 0px;
+  font-family: fangsong;
+}
+
+.input-submit-book:hover {
+  background: #5e3004;
+  color: #f4f1f4;
+}
+
+
+.errortext-book {
+  margin: 9px auto;
+  text-align: justify;
+  color: #3e1010;
+  text-transform: capitalize;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #dc3545;
+  border-color: white;
+  border-radius: 28px;
+  margin-top: -27.5px;
+  width: 447px;
+  padding: 7px;
+}
+
+/* ------------------------------------- search bar ---------------------------------- */
+
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
