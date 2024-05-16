@@ -1,5 +1,5 @@
 # Library-Management-System
-This is my library management system. Welcome! My attempt to address the difficulties in effectively managing and organizing libraries is this project. In order to simplify library operations, I've developed a platform that allows administrators and students to communicate easily with one another.
+Welcome to my library management system! My attempt was to address the difficulties in effectively managing and organizing libraries is this project. In order to simplify library operations, I've developed a platform that allows administrators and students to communicate easily with one another.
 
 The system provides a user-friendly interface that makes it easier for students to browse and borrow books. Students may quickly and simply search for books by title, author, or category after signing in, which makes it simple for them to locate the materials they want for their coursework or leisure activities. Even individuals with no technical expertise may easily utilize the system thanks to its easy design.
 
